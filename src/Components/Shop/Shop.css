@@ -1,4 +1,5 @@
 .shop-container{
+  width: 100%;
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
@@ -13,4 +14,46 @@
   color: rgb(255, 255, 255);
   padding: 20px;
   text-align: center;
+}
+.choose-btn{
+  margin-top: 30px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  background-color: #5D8BF4;
+  font-weight: bolder;
+  color: white;
+  border-radius: 5px;
+}
+@media screen and (max-width: 640px) {
+  .products{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  margin: 8px;
+  order: 2;
+}
+.Cart-container{
+order: 1;
+width: 100%;
+}
+.shop-container{
+  display: flex;
+  flex-direction: column;
+}
+}
+@media screen and (min-width:641px)and (max-width: 1041px) {
+  .products{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin: 8px;
+
+}
+.Cart-container{
+width: 100%;
+}
+.shop-container{
+  grid-template-columns: 2fr 1fr;
+}
 }

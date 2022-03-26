@@ -1,0 +1,26 @@
+.question-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 30px;
+  gap: 30px;
+}
+.question-container div{
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 640px){
+  .question-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+}
+@media screen and (min-width:641px)and (max-width: 1041px){
+   .question-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+   }
+}

@@ -30,12 +30,10 @@ const Shop = () => {
     }
   }
   const chooseRandom = () => {
-    const v = Math.random() * carts.length;
-    let a = Math.floor(v);
-    let k = carts[a];
-    // setCart(k);
-    console.log(k);
-    setCart([])
+    const randomNumber = Math.random() * carts.length;
+    let randomIntNumber = Math.floor(randomNumber);
+    let chooseProduct = carts[randomIntNumber];
+    setCart([chooseProduct])
   }
   return (
     <div className='shop-container'>
@@ -49,7 +47,7 @@ const Shop = () => {
         }
       </div>
       <div className='Cart-container'>
-        <h2>cart list( {carts.length})</h2>
+        <h2>Added Book ({carts.length})</h2>
         {
           carts.map(cart => <Cart
             key={cart.id}
@@ -57,8 +55,8 @@ const Shop = () => {
           ></Cart>)
         }
         <div>
-          <button onClick={() => chooseRandom()}>CHOOSE RANDOM ONE</button>
-          <button onClick={() => setCart([])}>CHOOSE AGAIN</button>
+          <button className='choose-btn' onClick={() => chooseRandom()}>CHOOSE RANDOM ONE</button>
+          <button className='choose-btn' onClick={() => setCart([])}>CHOOSE AGAIN</button>
         </div>
       </div>
     </div>
