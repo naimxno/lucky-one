@@ -1,0 +1,86 @@
+[
+  {
+    "id": "a0",
+    "name": "The Original",
+    "price": 387,
+    "img": "https://images-eu.ssl-images-amazon.com/images/I/41GaAhmY5sL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "a1",
+    "name": "Normal People",
+    "price": 350,
+    "img": "https://images-na.ssl-images-amazon.com/images/I/41iovg2T14L._SX323_BO1,204,203,200_.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "a2",
+    "name": "Mistborn",
+    "price": 170,
+    "img": "https://m.media-amazon.com/images/I/51Xs1z2wvEL._SY346_.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "a3",
+    "name": "Six of Crows",
+    "price": 195,
+    "img": "https://m.media-amazon.com/images/I/51-M--8JBgL.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "a4",
+    "name": "Wheel of Time",
+    "price": 332,
+    "img": "https://images-na.ssl-images-amazon.com/images/I/51d5WZi-muL._SX309_BO1,204,203,200_.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "a5",
+    "name": "Natives",
+    "price": 448,
+    "img": "https://images-eu.ssl-images-amazon.com/images/I/41LX-lUkyYL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "a6",
+    "name": "War Doctor",
+    "price": 280,
+    "img": "https://m.media-amazon.com/images/I/416zJj-5ajS._SY346_.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "a7",
+    "name": "The Elephant in the Brain",
+    "price": 581,
+    "img": "https://m.media-amazon.com/images/I/410MafL4aJL.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "a8",
+    "name": "The Ride of a Lifetime",
+    "price": 210,
+    "img": "https://images-eu.ssl-images-amazon.com/images/I/417Y7P8kW0L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "a9",
+    "name": "Storyworthy",
+    "price": 716,
+    "img": "https://m.media-amazon.com/images/I/51t7MutA4FL._SY346_.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "b0",
+    "name": "The Psychology of Money",
+    "price": 145,
+    "img": "https://images-eu.ssl-images-amazon.com/images/I/41y1sBiezmL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "b1",
+    "name": "A Million Miles in a Thousand Years",
+    "price": 462,
+    "img": "https://m.media-amazon.com/images/I/515SrM0315L.jpg",
+    "quantity": 0
+  }
+]
