@@ -8,3 +8,9 @@
   gap: 50px;
   margin: 80px;
 }
+.Cart-container{
+  background-color: #064663;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+}

@@ -20,4 +20,10 @@
   font-weight: bolder;
   color: white;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-info button p{
+  margin-right: 8px;
 }
