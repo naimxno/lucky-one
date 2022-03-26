@@ -19,20 +19,24 @@ const Shop = () => {
     if (!exists) {
       if (carts.length <= 3) {
         selectedBookArray = [...carts, selectedProduct];
+        setCart(selectedBookArray);
       }
       else {
         alert('All ready Four book Selected')
-        return
       }
     }
     else {
       alert("This book selected")
-      return
     }
-    setCart(selectedBookArray);
   }
-  // console.log(carts);
-
+  const chooseRandom = () => {
+    const v = Math.random() * carts.length;
+    let a = Math.floor(v);
+    let k = carts[a];
+    // setCart(k);
+    console.log(k);
+    setCart([])
+  }
   return (
     <div className='shop-container'>
       <div className='products'>
@@ -53,8 +57,8 @@ const Shop = () => {
           ></Cart>)
         }
         <div>
-          <button>CHOOSE RANDOM ONE</button>
-          <button>CHOOSE AGAIN</button>
+          <button onClick={() => chooseRandom()}>CHOOSE RANDOM ONE</button>
+          <button onClick={() => setCart([])}>CHOOSE AGAIN</button>
         </div>
       </div>
     </div>
