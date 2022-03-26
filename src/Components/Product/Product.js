@@ -4,13 +4,13 @@ import React from 'react';
 import './Product.css'
 
 const Product = (props) => {
-  const { img, name, price, addToCartHandler } = props.product;
+  const { img, name, price } = props.product;
   return (
     <div className='product-info'>
       <img src={img} alt="" />
       <h4>{name}</h4>
       <p>Price : ${price}</p>
-      <button onClick={() => addToCartHandler(props.product)}><p>Add To Cart</p> <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon></button>
+      <button onClick={() => props.addToCartHandler(props.product)}><p>Add To Cart</p> <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon></button>
     </div>
   );
 };

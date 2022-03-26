@@ -1,0 +1,22 @@
+.cart-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.cart-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.cart-delete-btn{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-style:none;
+  font-size: large;
+  background-color: rgb(211, 195, 195);
+  color: rgb(241, 142, 142);
+  margin-left: 10px;
+}

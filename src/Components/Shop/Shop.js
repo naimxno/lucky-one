@@ -1,17 +1,38 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css'
 
 const Shop = () => {
+
   const [books, setBooks] = useState([]);
   useEffect(() => {
     fetch('products.json')
       .then(res => res.json())
       .then(data => setBooks(data))
   }, [])
-  const addToCartHandler = (books) => {
-    console.log(books);
+
+  const [carts, setCart] = useState([]);
+  const addToCartHandler = (selectedProduct) => {
+    let selectedBookArray = [];
+    const exists = carts.find(book => book.id === selectedProduct.id);
+    if (!exists) {
+      if (carts.length <= 3) {
+        selectedBookArray = [...carts, selectedProduct];
+      }
+      else {
+        alert('All ready Four book Selected')
+        return
+      }
+    }
+    else {
+      alert("This book selected")
+      return
+    }
+    setCart(selectedBookArray);
   }
+  // console.log(carts);
+
   return (
     <div className='shop-container'>
       <div className='products'>
@@ -24,7 +45,17 @@ const Shop = () => {
         }
       </div>
       <div className='Cart-container'>
-        <h2>cart list</h2>
+        <h2>cart list( {carts.length})</h2>
+        {
+          carts.map(cart => <Cart
+            key={cart.id}
+            cart={cart}
+          ></Cart>)
+        }
+        <div>
+          <button>CHOOSE RANDOM ONE</button>
+          <button>CHOOSE AGAIN</button>
+        </div>
       </div>
     </div>
   );
